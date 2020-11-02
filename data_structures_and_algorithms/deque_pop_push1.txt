@@ -1,0 +1,18 @@
+>>> q = deque()
+>>> q.append(1)
+>>> q.append(2)
+>>> q.append(3)
+>>> q
+deque([1, 2, 3])
+>>> q.appendleft(4)
+>>> q
+deque([4, 1, 2, 3])
+>>> q.pop()
+3
+>>> q
+deque([4, 1, 2])
+>>> q.popleft()
+4
+
+Adding or popping items from either end of a queue has O(1) complexity. 
+This is unlike a list where inserting or removing items from the front of the list is O(N).
