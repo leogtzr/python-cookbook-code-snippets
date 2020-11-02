@@ -1,0 +1,4 @@
+The solution involving zip() solves the problem by “inverting” the dictionary into 
+a sequence of (value, key) pairs. When performing comparisons on such tuples, 
+the value element is compared first, followed by the key. 
+This gives you exactly the behavior that you want and allows reductions and sorting to be easily performed on the dictionary contents using a single statement.
