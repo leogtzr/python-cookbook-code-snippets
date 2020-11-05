@@ -7,9 +7,16 @@ words = [
    'my', 'eyes', "you're", 'under'
 ]
 
-word_count = Counter(words)
-top_three = word_count.most_common(3)
+morewords = ['why','are','you','not','looking','in','my','eyes']
 
-print(top_three)
+a = Counter(words)
+b = Counter(morewords)
 
-print(word_count['not'])
+# Combine counts
+c = a + b
+print(c)
+
+# Substract counts:
+d = a - b
+
+print(d)
