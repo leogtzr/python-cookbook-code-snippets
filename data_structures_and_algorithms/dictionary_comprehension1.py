@@ -25,4 +25,8 @@ print(tech_stocks)
 
 p1 = dict((key, value) for key, value in prices.items() if value > 200)
 
-print(p1)
+# print(p1)
+
+# Make a dictionary of tech stocks
+p2 = { key:prices[key] for key in prices.keys() & tech_names }
+print(p2)
