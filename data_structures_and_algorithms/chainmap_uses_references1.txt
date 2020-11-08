@@ -1,0 +1,12 @@
+A ChainMap uses the original dictionaries, so it doesn’t have this behavior. For example:
+
+>>> a = {'x': 1, 'z': 3 }
+>>> b = {'y': 2, 'z': 4 }
+>>> merged = ChainMap(a, b)
+>>> merged['x']
+1
+>>> a['x'] = 42
+>>> merged['x']   # Notice change to merged dicts
+42
+>>>
+
