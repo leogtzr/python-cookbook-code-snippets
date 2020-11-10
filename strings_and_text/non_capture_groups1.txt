@@ -1,0 +1,7 @@
+If you don’t want the separator characters in the result, but still need to use parentheses to group 
+parts of the regular expression pattern, make sure you use a noncapture group, specified as (?:...). For example:
+
+>>> re.split(r'(?:,|;|\s)\s*', line)
+['asdf', 'fjdk', 'afed', 'fjek', 'asdf', 'foo']
+>>>
+
