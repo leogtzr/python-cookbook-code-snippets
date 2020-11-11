@@ -1,0 +1,17 @@
+>>> text = 'yeah, but no, but yeah, but no, but yeah'
+
+>>> # Exact match
+>>> text == 'yeah'
+False
+
+>>> # Match at start or end
+>>> text.startswith('yeah')
+True
+>>> text.endswith('no')
+False
+
+>>> # Search for the location of the first occurrence
+>>> text.find('no')
+10
+>>>
+
