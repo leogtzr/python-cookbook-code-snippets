@@ -1,0 +1,8 @@
+>>> # On OS X (Mac)
+>>> fnmatch('foo.txt', '*.TXT')
+False
+
+>>> # On Windows
+>>> fnmatch('foo.txt', '*.TXT')
+True
+>>>
