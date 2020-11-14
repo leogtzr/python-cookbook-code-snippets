@@ -1,0 +1,9 @@
+If you’re going to perform repeated substitutions of the same pattern, consider compiling it first for better performance. For example:
+
+>>> import re
+>>> datepat = re.compile(r'(\d+)/(\d+)/(\d+)')
+>>> datepat.sub(r'\3-\1-\2', text)
+'Today is 2012-11-27. PyCon starts 2013-3-13.'
+>>>
+
+
