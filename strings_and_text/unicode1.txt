@@ -1,0 +1,14 @@
+>>> s1 = 'Spicy Jalape\u00f1o'
+>>> s2 = 'Spicy Jalapen\u0303o'
+>>> s1
+'Spicy Jalapeño'
+>>> s2
+'Spicy Jalapeño'
+>>> s1 == s2
+False
+>>> len(s1)
+14
+>>> len(s2)
+15
+>>>
+
