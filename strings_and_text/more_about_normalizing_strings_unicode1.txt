@@ -1,0 +1,16 @@
+Python also supports the normalization forms NFKC and NFKD, which add extra compatibility features for 
+dealing with certain kinds of characters. For example:
+
+>>> s = '\ufb01'   # A single character
+>>> s
+'ﬁ'
+>>> unicodedata.normalize('NFD', s)
+'ﬁ'
+
+# Notice how the combined letters are broken apart here
+>>> unicodedata.normalize('NFKD', s)
+'fi'
+>>> unicodedata.normalize('NFKC', s)
+'fi'
+>>>
+

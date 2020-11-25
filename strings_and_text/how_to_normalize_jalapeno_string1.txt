@@ -1,0 +1,5 @@
+>>> t1 = unicodedata.normalize('NFD', s1)
+>>> ''.join(c for c in t1 if not unicodedata.combining(c))
+'Spicy Jalapeno'
+>>>
+
