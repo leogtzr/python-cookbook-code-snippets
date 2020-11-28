@@ -1,0 +1,18 @@
+>>> # Whitespace stripping
+>>> s = '   hello world  \n'
+>>> s.strip()
+'hello world'
+>>> s.lstrip()
+'hello world  \n'
+>>> s.rstrip()
+'   hello world'
+>>>
+
+>>> # Character stripping
+>>> t = '-----hello====='
+>>> t.lstrip('-')
+'hello====='
+>>> t.strip('-=')
+'hello'
+>>>
+
